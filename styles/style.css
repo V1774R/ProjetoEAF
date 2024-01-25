@@ -1,0 +1,210 @@
+/*variáveis de cores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --marrom: #bfa58b;
+    --bege: #E8DED4;
+    --marrom-escuro: #96694C;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--bege);
+    min-height: 100vh;
+    
+}
+.cabecalho{
+    width: 100%;
+    height: 90px;
+    background-color: var(--marrom);
+    opacity: 0.85;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.cabecalho__menus{
+    box-sizing: border-box;
+    background-color: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 30px;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+.cabecalho__menus a{
+    text-decoration: none;
+    color: var(--bege);
+    transition: 0.3s;
+}
+.cabecalho__menus a:hover{
+    scale: 1.05;
+    color: aliceblue;
+    transition: 0.3s;
+}
+.cabecalho__menus__logo{
+    width: 70px;
+    margin: 10px;
+}
+.banner{
+    width: 100%;
+}
+.principal{
+    border: none;
+    background-color: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+.principal__texto{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: var(--marrom-escuro);
+    text-align: center;
+    background-color: none;
+
+
+}
+.principal__texto h1{
+    font-family: "Charm", cursive;
+    font-size: 3rem;
+}
+.principal__sessao{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: none;
+    width: 80%;
+    margin: auto;
+ 
+}
+.principal__sessao img{
+    width: 60%;
+    margin: auto 10px 30px 20px;
+}
+.principal__sessao__informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 365px;
+    background-color: none;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--marrom-escuro);
+    margin-bottom: 20px;
+}
+
+.principal__sessao__informacoes p{
+    font-size: 1.1rem;
+    width: 100%;
+}
+.principal__sessao__informacoes a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--bege);
+    padding: 12px;
+    width: 130px;
+    background-color: var(--marrom);
+    border-radius: 10px;
+
+}
+.rodape{
+    height: 70px;
+    background-color: var(--marrom-escuro);
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.rodape p{
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--bege);
+}
+@media only screen and (max-width: 1200px) {
+    .cabecalho{
+        display: block;
+        position: relative;
+        width: 100%;
+        min-width: 290px;
+        text-align: center;
+        background-color: none;
+    }
+    .cabecalho img{
+        display: none;
+    }
+    .cabecalho__menus{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5rem;
+        align-items: center;
+        gap: 1px;
+
+
+    }
+    .cabecalho__menus a{
+        background-color: var(--marrom-escuro);
+        padding: 5.8px;
+        width: 100%;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal__sessao{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal__sessao img{
+        width: 100%;
+    }
+    .principal__texto{
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        padding: 5px;
+    }
+    .principal__texto h1{
+        font-size: 1.2rem;
+    }
+    .principal__texto p{
+        font-size: 0.5rem;
+    }
+    .principal__sessao__informacoes{
+        min-width: 290px;
+        font-size: 0.5rem;
+        background-color: none;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .principal__sessao__informacoes p{
+        min-width: 290px;
+        width: 80%;
+        font-size: 0.6rem;
+
+    }
+    .principal__sessao__informacoes a{
+        text-align: center;
+        width: 80%;
+        text-align: center;
+    
+    }
+}
