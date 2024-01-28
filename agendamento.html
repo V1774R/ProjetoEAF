@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/calendarioStyle.css">
     <script text="javascript" src="scripts/script.js"></script>
+   
 </head>
 <body>
     <div class="cabecalho__icone">
@@ -23,26 +25,37 @@
     <img class="banner" src="imgs/banner_bg.png" alt="foto do banner da promoção">
     <main class="principal">
         <div class="principal__texto">
-            <h1>Viva a beleza do seu olhar</h1>
-            <p>com um <strong>DESIGN PERSONALIZADO </strong><br>
-            que valoriza suas <strong>CARACTERÍSTICAS NATURAIS!</strong></p>
+            <h1>Agendamento</h1>
+            <p>As datas disponíveis <strong> são destacadas na cor verde </strong> </p>
+
         </div>
         <section class="principal__sessao">
-            <img class="realce" src="imgs/realce.png" alt="Foto resultado design personalizado.">
+            <div class="area" id="area"> 
+                <div class="cabecalhoC"> 
+                    <div class="btnNext" onclick="voltar()"> <img class="btn" src="imgs/back.png" alt="icone botão avançar"> </div> 
+                    <div class="mesAno"> </div> 
+                    <div class="btnBack" onclick="passar()"> <img class="btn" src="imgs/next.png" alt="icone botão voltar"> </div> 
+                </div>
+                <div class="dias">
+                    <div class="dia"> Dom </div>			
+                    <div class="dia"> Seg </div>
+                    <div class="dia"> Ter</div>
+                    <div class="dia"> Qua </div>
+                    <div class="dia"> Qui </div>
+                    <div class="dia"> Sex</div>
+                    <div class="dia"> Sab </div>
+                </div>
+                <div class="datas"><div>
 
-            <div class="principal__sessao__informacoes">
-                <h2>Design de Sobrancelhas Especializado</h2>
-                <p>
-                    Nossa técnica exclusiva encontra o design ideal de sobrancelhas que realça a beleza e a expressão natural de cada rosto.
-                </p>
-                <a href="#">saiba mais</a>
             </div>
-            <img class="principal__sessao__logo" src="imgs/logo.png" alt="logo Espaço Amanda Fernandes">
+                    
         </section>
+        <p class="aviso"> <strong> Desculpe.</strong><br> No momento, não temos datas disponíveis para agendamento. Em breve novas datas serão liberadas. </p>   
     </main>
     <footer class="rodape">
         <p>Todos os Direitos Reservados
         <br>Desenvolvido por ProjetosVillar</p>
     </footer>
+    <script text="javascript" src="scripts/calendarioScript.js"></script>
 </body>
 </html>

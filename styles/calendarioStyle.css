@@ -1,0 +1,89 @@
+:root{
+    --marrom: #bfa58b;
+    --bege: #E8DED4;
+    --marrom-escuro: #96694C;
+
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.area{
+    width: 430px;
+    height: 300px;
+    padding: 10px;
+    background-color: var(--marrom-escuro);
+    border-radius: 15px;
+}
+.cabecalhoC{
+    padding: 0px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    background-color: none;
+}
+.btnNext, .btnBack{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn{
+    width: 20px;
+    transition: 0.5s;
+}
+.btn:hover{
+    scale: 1.4;
+    transition: 0.5s;
+}
+.dias{
+    width: 430px;
+    height: 26px;
+    margin-top: 30px;
+    background-color: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.datas{
+
+    width: 430px;
+    height: 220px;
+    background-color: none;
+
+}
+.dia{
+    width: calc(400px / 7);
+    height: 40px;
+    font-weight: bolder;
+    background-color: none;
+    display: inline-block;
+}
+.data{
+    width: calc(430px / 7);
+    background-color: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+.data a{
+    text-decoration: none;
+    color: black;
+}
+.dinamico:hover{
+    background-color: var(--bege);
+    transition: 0.5s;
+}
+.inativo a{
+    color: var(--marrom);
+}
+.aviso{
+    width: 430px;
+    text-align: center;
+    color: var(--marrom-escuro);
+    font-size: 1rem;
+    margin: -50px auto 70px auto;
+    
+}
