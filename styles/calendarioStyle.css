@@ -8,7 +8,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .area{
-    width: 430px;
+    width: 300px;
     height: 300px;
     padding: 10px;
     background-color: var(--marrom-escuro);
@@ -35,7 +35,7 @@ body{
     transition: 0.5s;
 }
 .dias{
-    width: 430px;
+    width: 300px;
     height: 26px;
     margin-top: 30px;
     background-color: none;
@@ -45,28 +45,27 @@ body{
 }
 .datas{
 
-    width: 430px;
+    width: 300px;
     height: 220px;
     background-color: none;
 
 }
 .dia{
-    width: calc(400px / 7);
+    width: calc(300px / 7);
     height: 40px;
     font-weight: bolder;
     background-color: none;
     display: inline-block;
 }
 .data{
-    width: calc(430px / 7);
+    width: calc(300px / 7);
     background-color: none;
     display: inline-block;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 500;
     border-radius: 100%;
-    cursor: pointer;
-    
+    cursor: default;
 }
 .data a{
     text-decoration: none;
@@ -76,14 +75,19 @@ body{
     background-color: var(--bege);
     transition: 0.5s;
 }
-.inativo a{
+.verde{
+   background-color: green;
+}
+.inativo{
     color: var(--marrom);
+    cursor: default;
 }
 .aviso{
-    width: 430px;
+    width: 300px;
     text-align: center;
     color: var(--marrom-escuro);
     font-size: 1rem;
     margin: -50px auto 70px auto;
+    background-color: none;
     
 }
