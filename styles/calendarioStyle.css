@@ -162,3 +162,8 @@ body{
 .calendario__detalhesDia__hora div.disponivel{
     color: green;
 }
+.campo{
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+}
