@@ -129,5 +129,5 @@ function resumir(){
     elemento.innerHTML += `<div> Telefone: ${telefone} </div>`;
     elemento.innerHTML += `<div> Dia: ${dia} de ${meses[mes]} </div>`;
     elemento.innerHTML += `<div> Horário: ${horariosDisponiveis[hora]} horas </div>`;
-    elemento.innerHTML += `<div class="btn" style="cursor: pointer;"><a href="sucesso.html#sucesso">Confirmar</a></div><br>`;
+    elemento.innerHTML += `<div class="btn" style="cursor: pointer;"><a href="sucesso.html#sucesso" style="text-decoration: none; color: white;>Confirmar</a></div><br>`;
 }
